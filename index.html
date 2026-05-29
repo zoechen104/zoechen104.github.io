@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoe's Creative Portfolio</title>
+  <meta name="description" content="A safe, kid-friendly portfolio for Zoe's art, achievements, projects, favorites, and files.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Optional editing note only: Zoe is an incoming fifth grader. Do not publish school names, addresses, schedules, contact info, or other private details on the visible page. -->
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Go to top of Zoe's Portfolio">
+        <span class="brand-mark" aria-hidden="true">Z</span>
+        <span>Zoe's Portfolio</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#art-gallery">Art</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#files">Files</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <span class="shape shape-one" aria-hidden="true"></span>
+      <span class="shape shape-two" aria-hidden="true"></span>
+      <span class="shape shape-three" aria-hidden="true"></span>
+
+      <div class="hero-content">
+        <p class="section-kicker">Creative scrapbook</p>
+        <h1 id="hero-title">Zoe's Creative Portfolio</h1>
+        <p class="hero-subtitle">Art, achievements, projects, and favorite memories.</p>
+        <div class="hero-actions">
+          <a class="button primary-button" href="#art-gallery">See the art gallery</a>
+          <a class="button soft-button" href="#files">View files</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Decorative portfolio artwork">
+        <img src="assets/images/portfolio-hero.png" alt="Watercolor art supplies, ribbons, paper flowers, and a sketchbook on a cheerful desk.">
+        <div class="avatar-card" aria-label="Decorative placeholder avatar, not a real photo">
+          <!-- Replace only if a parent chooses a safe avatar or drawing. Do not use a real photo by default. -->
+          <div class="avatar-circle" aria-hidden="true">Z</div>
+          <p>Artist, maker, reader</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="section-kicker">About</p>
+        <h2 id="about-title">A Little About Zoe</h2>
+      </div>
+
+      <div class="about-panel">
+        <!-- Edit this paragraph to describe Zoe's creative interests. Keep it first-name-only and avoid private details. -->
+        <p>
+          Hi, I am Zoe. I like making colorful art, reading fun stories, building creative projects,
+          and saving favorite memories in one happy place. This portfolio is where my family can
+          help me share art, achievements, and projects I am proud of.
+        </p>
+
+        <!-- Edit these small highlight cards or copy one to add another safe interest. -->
+        <div class="about-highlights" aria-label="Zoe's safe interests">
+          <span>Colorful art</span>
+          <span>Good books</span>
+          <span>Creative projects</span>
+          <span>Kind moments</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section art-section" id="art-gallery" aria-labelledby="art-title">
+      <div class="section-heading">
+        <p class="section-kicker">Gallery</p>
+        <h2 id="art-title">Art Gallery</h2>
+        <p class="section-intro">Replace the sample image paths with Zoe's real artwork files when you are ready.</p>
+      </div>
+
+      <div class="filter-buttons" aria-label="Filter artwork by category">
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="drawing" aria-pressed="false">Drawing</button>
+        <button class="filter-button" type="button" data-filter="painting" aria-pressed="false">Painting</button>
+        <button class="filter-button" type="button" data-filter="craft" aria-pressed="false">Craft</button>
+        <button class="filter-button" type="button" data-filter="digital" aria-pressed="false">Digital</button>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Add a new artwork card below by copying one full <article> block. -->
+        <article class="art-card" data-category="drawing">
+          <!-- Replace this image with Zoe's artwork: assets/art/art-1.png -->
+          <div class="art-image-frame">
+            <img class="art-image" src="assets/art/art-1.png" alt="Rainbow Garden, a colorful pencil drawing by Zoe.">
+            <div class="image-fallback" aria-hidden="true">
+              <strong>art-1.png</strong>
+              <span>Add a drawing here</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <!-- Edit the artwork title, medium, and description below. -->
+            <p class="card-category">Drawing</p>
+            <h3>Rainbow Garden</h3>
+            <p class="card-meta">Colored pencil</p>
+            <p>A cheerful garden idea with bright colors, flowers, and patterns.</p>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="painting">
+          <!-- Replace this image with Zoe's artwork: assets/art/art-2.png -->
+          <div class="art-image-frame">
+            <img class="art-image" src="assets/art/art-2.png" alt="Sunset Sky, a soft watercolor painting by Zoe.">
+            <div class="image-fallback" aria-hidden="true">
+              <strong>art-2.png</strong>
+              <span>Add a painting here</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Painting</p>
+            <h3>Sunset Sky</h3>
+            <p class="card-meta">Watercolor</p>
+            <p>A peaceful sky with warm peach, pink, and lavender colors.</p>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="craft">
+          <!-- Replace this image with Zoe's artwork: assets/art/art-3.png -->
+          <div class="art-image-frame">
+            <img class="art-image" src="assets/art/art-3.png" alt="Paper Flower Bouquet, a paper craft by Zoe.">
+            <div class="image-fallback" aria-hidden="true">
+              <strong>art-3.png</strong>
+              <span>Add a craft photo here</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Craft</p>
+            <h3>Paper Flower Bouquet</h3>
+            <p class="card-meta">Paper craft</p>
+            <p>Layered paper flowers made with careful cutting, folding, and color choices.</p>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="digital">
+          <!-- Replace this image with Zoe's artwork: assets/art/art-4.png -->
+          <div class="art-image-frame">
+            <img class="art-image" src="assets/art/art-4.png" alt="Dream Room, a digital art project by Zoe.">
+            <div class="image-fallback" aria-hidden="true">
+              <strong>art-4.png</strong>
+              <span>Add digital art here</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Digital</p>
+            <h3>Dream Room</h3>
+            <p class="card-meta">Digital art</p>
+            <p>A cozy room design with favorite colors, shelves, and creative details.</p>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="drawing">
+          <!-- Replace this image with Zoe's artwork: assets/art/art-5.png -->
+          <div class="art-image-frame">
+            <img class="art-image" src="assets/art/art-5.png" alt="Pattern Page, a marker drawing by Zoe.">
+            <div class="image-fallback" aria-hidden="true">
+              <strong>art-5.png</strong>
+              <span>Add a drawing here</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Drawing</p>
+            <h3>Pattern Page</h3>
+            <p class="card-meta">Markers</p>
+            <p>A page of shapes, borders, swirls, and repeating designs.</p>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="painting">
+          <!-- Replace this image with Zoe's artwork: assets/art/art-6.png -->
+          <div class="art-image-frame">
+            <img class="art-image" src="assets/art/art-6.png" alt="Happy Landscape, a gouache painting by Zoe.">
+            <div class="image-fallback" aria-hidden="true">
+              <strong>art-6.png</strong>
+              <span>Add a painting here</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Painting</p>
+            <h3>Happy Landscape</h3>
+            <p class="card-meta">Gouache</p>
+            <p>A bright outdoor scene with soft clouds and playful brushstrokes.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section achievements-section" id="achievements" aria-labelledby="achievements-title">
+      <div class="section-heading">
+        <p class="section-kicker">Milestones</p>
+        <h2 id="achievements-title">Achievements</h2>
+        <p class="section-intro">Use this section for safe, general accomplishments and proud moments.</p>
+      </div>
+
+      <div class="achievement-list">
+        <!-- Add a new achievement card below by copying this block. Avoid dates, locations, or private event details. -->
+        <article class="achievement-card">
+          <span class="achievement-dot" aria-hidden="true"></span>
+          <div>
+            <h3>Completed a reading challenge</h3>
+            <p>Finished a set of books and kept track of favorite characters and ideas.</p>
+          </div>
+        </article>
+
+        <article class="achievement-card">
+          <span class="achievement-dot" aria-hidden="true"></span>
+          <div>
+            <h3>Created a handmade art collection</h3>
+            <p>Made a group of drawings, paintings, and crafts to share with family.</p>
+          </div>
+        </article>
+
+        <article class="achievement-card">
+          <span class="achievement-dot" aria-hidden="true"></span>
+          <div>
+            <h3>Performed in a school event</h3>
+            <p>Practiced, showed courage, and helped make the performance special.</p>
+          </div>
+        </article>
+
+        <article class="achievement-card">
+          <span class="achievement-dot" aria-hidden="true"></span>
+          <div>
+            <h3>Helped with a community project</h3>
+            <p>Contributed time, kindness, and creativity to a helpful project.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section favorites-section" id="favorites" aria-labelledby="favorites-title">
+      <div class="section-heading">
+        <p class="section-kicker">Projects and favorites</p>
+        <h2 id="favorites-title">Favorite Activities</h2>
+        <p class="section-intro">Edit these cards with hobbies, books, subjects, crafts, music, or sports.</p>
+      </div>
+
+      <div class="favorites-grid">
+        <!-- Add a new favorite card below by copying this block. Keep examples safe and non-personal. -->
+        <article class="favorite-card">
+          <h3>Art Studio Time</h3>
+          <p>Trying new colors, sketching ideas, and making little collections.</p>
+        </article>
+
+        <article class="favorite-card">
+          <h3>Bookshelf Picks</h3>
+          <p>Adventure stories, funny chapters, and books with creative characters.</p>
+        </article>
+
+        <article class="favorite-card">
+          <h3>Craft Lab</h3>
+          <p>Paper crafts, handmade cards, bead designs, and decorated notebooks.</p>
+        </article>
+
+        <article class="favorite-card">
+          <h3>Music Moments</h3>
+          <p>Listening to favorite songs, learning rhythms, or practicing a performance.</p>
+        </article>
+
+        <article class="favorite-card">
+          <h3>STEM Curiosity</h3>
+          <p>Building, testing ideas, solving puzzles, and asking good questions.</p>
+        </article>
+
+        <article class="favorite-card">
+          <h3>Active Fun</h3>
+          <p>Games, movement, teamwork, and trying new activities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section files-section" id="files" aria-labelledby="files-title">
+      <div class="section-heading">
+        <p class="section-kicker">Files</p>
+        <h2 id="files-title">Files and Downloads</h2>
+        <p class="section-intro">Put PDFs, documents, or display files in <code>assets/files/</code>, then update the links below.</p>
+      </div>
+
+      <div class="files-grid">
+        <!-- Replace this file with a real PDF: assets/files/sample-art-collection.pdf -->
+        <article class="file-card">
+          <p class="card-category">PDF</p>
+          <h3>Sample Art Collection</h3>
+          <p>A place to link a scanned art booklet, project PDF, or family-approved portfolio file.</p>
+          <a class="text-link" href="assets/files/sample-art-collection.pdf" target="_blank" rel="noopener">Open sample-art-collection.pdf</a>
+        </article>
+
+        <!-- Replace this file with a real PDF: assets/files/story-example.pdf -->
+        <article class="file-card">
+          <p class="card-category">PDF</p>
+          <h3>Story Example</h3>
+          <p>A place to share a short story, writing sample, or creative project document.</p>
+          <a class="text-link" href="assets/files/story-example.pdf" target="_blank" rel="noopener">Open story-example.pdf</a>
+        </article>
+
+        <!-- Copy this card to add another image, PDF, or document link from assets/files/. -->
+        <article class="file-card">
+          <p class="card-category">Image or document</p>
+          <h3>Future Project File</h3>
+          <p>Copy this card when you add another family-approved file to the folder.</p>
+          <a class="text-link" href="assets/files/README.md" target="_blank" rel="noopener">See file instructions</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with care for Zoe's creativity.</p>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+</body>
+</html>
