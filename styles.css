@@ -306,6 +306,7 @@ code {
 
 .section {
   padding: 4rem 0;
+  scroll-margin-top: 6rem;
 }
 
 .section-heading,
@@ -342,6 +343,11 @@ code {
 .files-section {
   background: rgba(255, 255, 255, 0.5);
   border-block: 1px solid rgba(234, 223, 242, 0.55);
+}
+
+.photos-section {
+  background: linear-gradient(180deg, rgba(255, 254, 250, 0.78), rgba(244, 251, 255, 0.88));
+  border-bottom: 0;
 }
 
 .about-panel {
@@ -429,6 +435,21 @@ code {
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.photo-card .card-body {
+  flex: 1;
+}
+
+.photo-card .card-category,
+.photo-card .card-meta {
+  color: #4f7c5c !important;
+}
+
 .art-card:hover,
 .photo-card:hover,
 .favorite-card:hover,
@@ -454,10 +475,18 @@ code {
 }
 
 .photo-image-frame {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   background:
     linear-gradient(135deg, rgba(223, 247, 234, 0.85), rgba(255, 240, 168, 0.72)),
     #ffffff;
+}
+
+.photo-image-frame:not(.missing-image)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
 }
 
 .art-image,
@@ -465,6 +494,10 @@ code {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.photo-image {
+  object-position: center;
 }
 
 .art-image.is-missing,
@@ -490,6 +523,12 @@ code {
 
 .missing-image .image-fallback {
   display: grid;
+}
+
+.photo-image-frame.missing-image .image-fallback {
+  color: #4f7c5c;
+  background: rgba(255, 254, 250, 0.82);
+  border-color: rgba(79, 124, 92, 0.36);
 }
 
 .image-fallback strong {
