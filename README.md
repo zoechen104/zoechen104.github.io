@@ -10,6 +10,7 @@ This is a simple GitHub Pages-ready personal portfolio website for Zoe. It uses 
 - `assets/art/` is where artwork images go.
 - `assets/files/` is where PDFs, documents, and downloads go.
 - `assets/images/` is for decorative site images, such as the hero image.
+- `assets/photos/` is where photos taken by Zoe go.
 
 ## How To Edit Website Text
 
@@ -45,6 +46,22 @@ Available gallery categories are:
 - `painting`
 - `craft`
 - `digital`
+
+## How To Add Photos Zoe Took
+
+1. Put JPG, PNG, or WebP photos inside `assets/photos/`.
+2. Use simple file names, such as `photo-2.jpg`, `flower-closeup.jpg`, or `favorite-view.webp`.
+3. Open `index.html`.
+4. Find the Photos I Took section.
+5. Update the image `src`, `alt`, title, category, and caption.
+
+Example:
+
+```html
+<img class="photo-image" src="assets/photos/flower-closeup.jpg" alt="A close-up photo of a flower.">
+```
+
+You can copy and paste an entire photo `<article>` block to add more photo cards.
 
 ## How To Add Downloadable Files
 

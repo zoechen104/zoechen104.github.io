@@ -311,6 +311,7 @@ code {
 .section-heading,
 .about-panel,
 .gallery-grid,
+.photo-grid,
 .achievement-list,
 .favorites-grid,
 .files-grid {
@@ -336,6 +337,7 @@ code {
 }
 
 .intro-section,
+.photos-section,
 .achievements-section,
 .files-section {
   background: rgba(255, 255, 255, 0.5);
@@ -407,6 +409,7 @@ code {
 }
 
 .gallery-grid,
+.photo-grid,
 .favorites-grid,
 .files-grid {
   display: grid;
@@ -415,6 +418,7 @@ code {
 }
 
 .art-card,
+.photo-card,
 .favorite-card,
 .file-card,
 .achievement-card {
@@ -426,6 +430,7 @@ code {
 }
 
 .art-card:hover,
+.photo-card:hover,
 .favorite-card:hover,
 .file-card:hover,
 .achievement-card:hover {
@@ -434,23 +439,36 @@ code {
   box-shadow: 0 18px 44px rgba(91, 63, 145, 0.16);
 }
 
-.art-image-frame {
+.art-image-frame,
+.photo-image-frame {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
   background:
     linear-gradient(135deg, rgba(255, 216, 230, 0.8), rgba(217, 240, 255, 0.8)),
     #ffffff;
   border-radius: 8px 8px 0 0;
 }
 
-.art-image {
+.art-image-frame {
+  aspect-ratio: 4 / 3;
+}
+
+.photo-image-frame {
+  aspect-ratio: 1 / 1;
+  background:
+    linear-gradient(135deg, rgba(223, 247, 234, 0.85), rgba(255, 240, 168, 0.72)),
+    #ffffff;
+}
+
+.art-image,
+.photo-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.art-image.is-missing {
+.art-image.is-missing,
+.photo-image.is-missing {
   display: none;
 }
 
@@ -630,6 +648,7 @@ code {
   }
 
   .gallery-grid,
+  .photo-grid,
   .favorites-grid,
   .files-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -653,6 +672,7 @@ code {
   .about-panel,
   .filter-buttons,
   .gallery-grid,
+  .photo-grid,
   .achievement-list,
   .favorites-grid,
   .files-grid {
@@ -669,6 +689,7 @@ code {
   }
 
   .gallery-grid,
+  .photo-grid,
   .favorites-grid,
   .files-grid {
     grid-template-columns: 1fr;
@@ -690,6 +711,7 @@ code {
   .about-panel,
   .filter-buttons,
   .gallery-grid,
+  .photo-grid,
   .achievement-list,
   .favorites-grid,
   .files-grid {

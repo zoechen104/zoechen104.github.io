@@ -41,11 +41,11 @@ filterButtons.forEach((button) => {
   });
 });
 
-// Show a pretty fallback when a sample artwork image has not been added yet.
-document.querySelectorAll(".art-image").forEach((image) => {
+// Show a pretty fallback when a sample artwork or photo image has not been added yet.
+document.querySelectorAll(".art-image, .photo-image").forEach((image) => {
   const markMissing = () => {
     image.classList.add("is-missing");
-    image.closest(".art-image-frame").classList.add("missing-image");
+    image.closest(".art-image-frame, .photo-image-frame").classList.add("missing-image");
   };
 
   image.addEventListener("error", markMissing);
